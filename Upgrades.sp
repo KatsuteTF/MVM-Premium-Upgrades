@@ -11,7 +11,7 @@ public Plugin myinfo = {
     name        = "Premium Upgrades",
     author      = "Katsute",
     description = "Premium upgrade station for MVM",
-    version     = "1.0",
+    version     = "1.1",
     url         = "https://github.com/KatsuteTF/MVM-Premium-Upgrades"
 }
 
@@ -36,7 +36,7 @@ public Action OnClientSayCommand(int client, const char[] command, const char[] 
     }else if(strcmp(args, "!package") == 0){
         Upgrades_Package();
     }
-    return Plugin_Handled;
+    return Plugin_Continue;
 }
 
 public void SetCustomUpgradeFile(const char[] file){
